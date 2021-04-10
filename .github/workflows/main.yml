@@ -33,6 +33,6 @@ jobs:
         uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
         with: 
           dir: Reports/cucumber-html-reports
-          branch: gh-pages
-          token: ${{secrets.ACCESS_TOKEN}}
+#           branch: gh-pages
+#           token: ${{secrets.ACCESS_TOKEN}}
         
