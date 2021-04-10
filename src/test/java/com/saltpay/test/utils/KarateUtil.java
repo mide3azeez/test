@@ -36,7 +36,7 @@ public class KarateUtil {
      */
     public static void generateReport(String karateOutputPath) {
         DateTime dt = new DateTime();
-        String reportFolderLocation = "./docs/";
+        String reportFolderLocation = "./Reports/";
         try{
             File reportFolder =  new File(reportFolderLocation);
             if(reportFolder.exists()){
