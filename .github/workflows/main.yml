@@ -34,5 +34,5 @@ jobs:
         with: 
           dir: Reports/cucumber-html-reports
           branch: gh-pages
-          token: ${{secrets.ACCESS_TOKEN}}
+#           token: ${{secrets.ACCESS_TOKEN}}
         
