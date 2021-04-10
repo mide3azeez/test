@@ -36,7 +36,7 @@ public class KarateUtil {
      */
     public static void generateReport(String karateOutputPath) {
         DateTime dt = new DateTime();
-        String reportFolderLocation = "./Reports/";
+        String reportFolderLocation = "./docs/";
         try{
             File reportFolder =  new File(reportFolderLocation);
             if(reportFolder.exists()){
@@ -50,7 +50,6 @@ public class KarateUtil {
             List<String> jsonPaths = new ArrayList(jsonFiles.size());
             jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
             Configuration config = new Configuration(new File(reportFolderLocation), "VAS");
-//            config.setBuildNumber("1233");
             ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
             reportBuilder.generateReports();
         }
