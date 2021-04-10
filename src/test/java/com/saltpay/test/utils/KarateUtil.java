@@ -26,18 +26,17 @@ public class KarateUtil {
     public void testParallel() throws Exception{
         String karateOutputPath = "target/surefire-reports";
         KarateStats stats = CucumberRunner.parallel(getClass(), 5, karateOutputPath);
-        generateReport(karateOutputPath, "testParallel");
+        generateReport(karateOutputPath);
         assertTrue("there are scenario failures", stats.getFailCount() == 0);
     }
 
     /**
      * This function generates the report after execution
      * @param karateOutputPath
-     * @param runnerName
      */
-    public static void generateReport(String karateOutputPath, String runnerName) {
+    public static void generateReport(String karateOutputPath) {
         DateTime dt = new DateTime();
-        String reportFolderLocation = "./Reports/"+runnerName+"_"+dt.getFormatedTimeStamp();
+        String reportFolderLocation = "./Reports/";
         try{
             File reportFolder =  new File(reportFolderLocation);
             if(reportFolder.exists()){

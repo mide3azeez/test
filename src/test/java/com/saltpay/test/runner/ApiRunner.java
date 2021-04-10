@@ -35,7 +35,7 @@ public class ApiRunner {
             KarateStats stats = CucumberRunner.parallel(tags, features, 1, karateOutputPath);
 
             log.info("Pringitng out Karate Output :::: "+karateOutputPath);
-            KarateUtil.generateReport(karateOutputPath, KarateUtil.getMethodName());
+            KarateUtil.generateReport(karateOutputPath);
             Assert.assertEquals(0, stats.getFailCount());
         }
         catch (Exception e){
