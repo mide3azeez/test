@@ -30,9 +30,8 @@ jobs:
         run: mvn test --file pom.xml
         
       - name: Publish Report
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: peaceiris/actions-gh-pages@v3
         with: 
-          dir: ./Reports/cucumber-html-reports
-          branch: master
-#           token: ${{secrets.ACCESS_TOKEN}}
+          publish_dir: ./Reports/cucumber-html-reports
+          github_token: ${{secrets.ACCESS_TOKEN}}
         
