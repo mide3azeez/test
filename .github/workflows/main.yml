@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+#   workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checking out to master branch
+        uses: actions/checkout@v2
+
+      - name: Install JDK
+        uses: actions/setup-java@v1
+        with:
+            java-version : 1.8
+
+      - name: Run Test
+        run: mvn test --file pom.xml
+        
