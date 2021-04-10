@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @Football-Api</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>VAS</td>
+            <td>10 Apr 2021, 02:28</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Football-Api</td>
+                    <td      class="passed"    >20</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">20</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="1421655771">1s 421ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FootballApi-feature.html">FootballApi.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Football-Api.html">@Football-Api</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1s 010ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get Team Information by ID validate response schema and response data</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'teams'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param id = 33</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">967ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>02:28:35.575 request:
+1 &gt; GET https://api-football-v1.p.rapidapi.com/v3/teams?id=33
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api-football-v1.p.rapidapi.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
+1 &gt; x-rapidapi-host: api-football-v1.p.rapidapi.com
+1 &gt; x-rapidapi-key: ee13a762e9msh6cd9b3f5db3d754p12f0bfjsn52bc5687f3bf
+
+02:28:36.223 response time in milliseconds: 646
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: x-rapidapi-key, x-apisports-key, x-rapidapi-host
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sat, 10 Apr 2021 02:28:36 GMT
+1 &lt; Server: RapidAPI-1.2.8
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-RapidAPI-Region: AWS - us-east-1
+1 &lt; X-RapidAPI-Version: 1.2.8
+1 &lt; X-RateLimit-requests-Limit: 100
+1 &lt; X-RateLimit-requests-Remaining: 43
+1 &lt; X-RateLimit-requests-Reset: 71933
+1 &lt; X-Request-ID: 175e67b1-961f-4e5f-80d9-b362a2dbae27
+{&quot;get&quot;:&quot;teams&quot;,&quot;parameters&quot;:{&quot;id&quot;:&quot;33&quot;},&quot;errors&quot;:[],&quot;results&quot;:1,&quot;paging&quot;:{&quot;current&quot;:1,&quot;total&quot;:1},&quot;response&quot;:[{&quot;team&quot;:{&quot;id&quot;:33,&quot;name&quot;:&quot;Manchester United&quot;,&quot;country&quot;:&quot;England&quot;,&quot;founded&quot;:1878,&quot;national&quot;:false,&quot;logo&quot;:&quot;https:\/\/media.api-sports.io\/football\/teams\/33.png&quot;},&quot;venue&quot;:{&quot;id&quot;:556,&quot;name&quot;:&quot;Old Trafford&quot;,&quot;address&quot;:&quot;Sir Matt Busby Way&quot;,&quot;city&quot;:&quot;Manchester&quot;,&quot;capacity&quot;:76212,&quot;surface&quot;:&quot;grass&quot;,&quot;image&quot;:&quot;https:\/\/media.api-sports.io\/football\/venues\/556.png&quot;}}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>02:28:36.230 [print] {
+  &quot;get&quot;: &quot;teams&quot;,
+  &quot;parameters&quot;: {
+    &quot;id&quot;: &quot;33&quot;
+  },
+  &quot;errors&quot;: [
+  ],
+  &quot;results&quot;: 1,
+  &quot;paging&quot;: {
+    &quot;current&quot;: 1,
+    &quot;total&quot;: 1
+  },
+  &quot;response&quot;: [
+    {
+      &quot;team&quot;: {
+        &quot;id&quot;: 33,
+        &quot;name&quot;: &quot;Manchester United&quot;,
+        &quot;country&quot;: &quot;England&quot;,
+        &quot;founded&quot;: 1878,
+        &quot;national&quot;: false,
+        &quot;logo&quot;: &quot;https://media.api-sports.io/football/teams/33.png&quot;
+      },
+      &quot;venue&quot;: {
+        &quot;id&quot;: 556,
+        &quot;name&quot;: &quot;Old Trafford&quot;,
+        &quot;address&quot;: &quot;Sir Matt Busby Way&quot;,
+        &quot;city&quot;: &quot;Manchester&quot;,
+        &quot;capacity&quot;: 76212,
+        &quot;surface&quot;: &quot;grass&quot;,
+        &quot;image&quot;: &quot;https://media.api-sports.io/football/venues/556.png&quot;
+      }
+    }
+  ]
+}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == '#(^^teamInformationSchema)'</span>
+  
+  <span class="lead-duration duration">025ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.response[0].team.id == 33</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.response[0].team.name != ''</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.response[0].team.country != &quot;&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.response[0].team.founded != &quot;&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.response[0].team.logo != &quot;&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FootballApi-feature.html">FootballApi.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Football-Api.html">@Football-Api</a>
+      </div>
+
+  
+  <span class="lead-duration duration">410ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get Coach by Team ID</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'coachs'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param team = 33</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">399ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>02:28:36.309 request:
+1 &gt; GET https://api-football-v1.p.rapidapi.com/v3/coachs?team=33
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api-football-v1.p.rapidapi.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
+1 &gt; x-rapidapi-host: api-football-v1.p.rapidapi.com
+1 &gt; x-rapidapi-key: ee13a762e9msh6cd9b3f5db3d754p12f0bfjsn52bc5687f3bf
+
+02:28:36.704 response time in milliseconds: 395
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: x-rapidapi-key, x-apisports-key, x-rapidapi-host
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sat, 10 Apr 2021 02:28:36 GMT
+1 &lt; Server: RapidAPI-1.2.8
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-RapidAPI-Region: AWS - us-east-1
+1 &lt; X-RapidAPI-Version: 1.2.8
+1 &lt; X-RateLimit-requests-Limit: 100
+1 &lt; X-RateLimit-requests-Remaining: 42
+1 &lt; X-RateLimit-requests-Reset: 71933
+1 &lt; X-Request-ID: 6ad50897-4ea1-4d63-bb68-47399469aab3
+{&quot;get&quot;:&quot;coachs&quot;,&quot;parameters&quot;:{&quot;team&quot;:&quot;33&quot;},&quot;errors&quot;:[],&quot;results&quot;:1,&quot;paging&quot;:{&quot;current&quot;:1,&quot;total&quot;:1},&quot;response&quot;:[{&quot;id&quot;:19,&quot;name&quot;:&quot;O. Solskj\u00e6r&quot;,&quot;firstname&quot;:&quot;Ole Gunnar&quot;,&quot;lastname&quot;:&quot;Solskj\u00e6r&quot;,&quot;age&quot;:48,&quot;birth&quot;:{&quot;date&quot;:&quot;1973-02-26&quot;,&quot;place&quot;:&quot;Kristiansund&quot;,&quot;country&quot;:&quot;Norway&quot;},&quot;nationality&quot;:&quot;Norway&quot;,&quot;height&quot;:null,&quot;weight&quot;:null,&quot;team&quot;:{&quot;id&quot;:33,&quot;name&quot;:&quot;Manchester United&quot;,&quot;logo&quot;:&quot;https:\/\/media.api-sports.io\/football\/teams\/33.png&quot;},&quot;career&quot;:[{&quot;team&quot;:{&quot;id&quot;:33,&quot;name&quot;:&quot;Manchester United&quot;,&quot;logo&quot;:&quot;https:\/\/media.api-sports.io\/football\/teams\/33.png&quot;},&quot;start&quot;:&quot;2018-12-01&quot;,&quot;end&quot;:null},{&quot;team&quot;:{&quot;id&quot;:329,&quot;name&quot;:&quot;Molde&quot;,&quot;logo&quot;:&quot;https:\/\/media.api-sports.io\/football\/teams\/329.png&quot;},&quot;start&quot;:&quot;2015-10-01&quot;,&quot;end&quot;:&quot;2018-12-01&quot;},{&quot;team&quot;:{&quot;id&quot;:43,&quot;name&quot;:&quot;Cardiff City&quot;,&quot;logo&quot;:&quot;https:\/\/media.api-sports.io\/football\/teams\/43.png&quot;},&quot;start&quot;:&quot;2014-01-01&quot;,&quot;end&quot;:&quot;2014-09-01&quot;},{&quot;team&quot;:{&quot;id&quot;:329,&quot;name&quot;:&quot;Molde&quot;,&quot;logo&quot;:&quot;https:\/\/media.api-sports.io\/football\/teams\/329.png&quot;},&quot;start&quot;:&quot;2010-11-01&quot;,&quot;end&quot;:&quot;2014-01-01&quot;}]}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>02:28:36.707 [print] {
+  &quot;get&quot;: &quot;coachs&quot;,
+  &quot;parameters&quot;: {
+    &quot;team&quot;: &quot;33&quot;
+  },
+  &quot;errors&quot;: [
+  ],
+  &quot;results&quot;: 1,
+  &quot;paging&quot;: {
+    &quot;current&quot;: 1,
+    &quot;total&quot;: 1
+  },
+  &quot;response&quot;: [
+    {
+      &quot;id&quot;: 19,
+      &quot;name&quot;: &quot;O. Solskj&aelig;r&quot;,
+      &quot;firstname&quot;: &quot;Ole Gunnar&quot;,
+      &quot;lastname&quot;: &quot;Solskj&aelig;r&quot;,
+      &quot;age&quot;: 48,
+      &quot;birth&quot;: {
+        &quot;date&quot;: &quot;1973-02-26&quot;,
+        &quot;place&quot;: &quot;Kristiansund&quot;,
+        &quot;country&quot;: &quot;Norway&quot;
+      },
+      &quot;nationality&quot;: &quot;Norway&quot;,
+      &quot;height&quot;: null,
+      &quot;weight&quot;: null,
+      &quot;team&quot;: {
+        &quot;id&quot;: 33,
+        &quot;name&quot;: &quot;Manchester United&quot;,
+        &quot;logo&quot;: &quot;https://media.api-sports.io/football/teams/33.png&quot;
+      },
+      &quot;career&quot;: [
+        {
+          &quot;team&quot;: {
+            &quot;id&quot;: 33,
+            &quot;name&quot;: &quot;Manchester United&quot;,
+            &quot;logo&quot;: &quot;https://media.api-sports.io/football/teams/33.png&quot;
+          },
+          &quot;start&quot;: &quot;2018-12-01&quot;,
+          &quot;end&quot;: null
+        },
+        {
+          &quot;team&quot;: {
+            &quot;id&quot;: 329,
+            &quot;name&quot;: &quot;Molde&quot;,
+            &quot;logo&quot;: &quot;https://media.api-sports.io/football/teams/329.png&quot;
+          },
+          &quot;start&quot;: &quot;2015-10-01&quot;,
+          &quot;end&quot;: &quot;2018-12-01&quot;
+        },
+        {
+          &quot;team&quot;: {
+            &quot;id&quot;: 43,
+            &quot;name&quot;: &quot;Cardiff City&quot;,
+            &quot;logo&quot;: &quot;https://media.api-sports.io/football/teams/43.png&quot;
+          },
+          &quot;start&quot;: &quot;2014-01-01&quot;,
+          &quot;end&quot;: &quot;2014-09-01&quot;
+        },
+        {
+          &quot;team&quot;: {
+            &quot;id&quot;: 329,
+            &quot;name&quot;: &quot;Molde&quot;,
+            &quot;logo&quot;: &quot;https://media.api-sports.io/football/teams/329.png&quot;
+          },
+          &quot;start&quot;: &quot;2010-11-01&quot;,
+          &quot;end&quot;: &quot;2014-01-01&quot;
+        }
+      ]
+    }
+  ]
+}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.parameters.team == '33'</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.response[0].firstname != &quot;&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
